@@ -54,8 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    // 'asset_url' => env('ASSET_URL', null),
-    env('ASSET_URL', 'http://delivebooo.herokuapp.com/'),
+    'asset_url' => env('ASSET_URL', null),
 
     /*
     |--------------------------------------------------------------------------
