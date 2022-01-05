@@ -1,0 +1,125 @@
+
+//
+//
+// common
+//
+//
+//
+html {
+    scroll-behavior: smooth;
+  }
+body, a, input, select, button, textarea {
+    font-family: 'PolySans Slim';
+    overflow-x: hidden;
+}
+
+.body {
+    width: 100%
+}
+.container--1000 {
+    max-width: 43.75rem;
+    margin: auto;
+    padding: $gt;
+}
+
+.container--1500 {
+    max-width: 65rem;
+    margin: auto;
+    padding: $gt;
+}
+
+//
+//
+// txt
+//
+//
+$txt_xs: .8rem;
+$txt_sm: 1rem;
+$txt: 1.3rem;
+$txt_md: 1.7rem;
+$txt_lg: 2.2rem;
+$txt_xl: 3rem;
+$txt_xxl: 4rem;
+.style--bold {
+    font-weight: bold;
+}
+//txt color
+.color--grey {color:$greyBorder};
+//
+// title
+//
+//
+h2, h5, h3, h4, h5, h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: 'PolySans Neutral';
+}
+//
+//
+// links style
+//
+//
+// 
+a {
+text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    margin: 0;
+    border: none;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+//
+//
+// animation
+//
+//
+// 
+.slide-fade-enter-active {
+transition: all .2s ease;
+}
+.slide-fade-leave-active {
+transition: all .2s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+transform: translateY(-10px);
+opacity: 0;
+}
+//
+// padding
+//
+.padding-responsive {
+    padding-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .padding-responsive {
+        padding-top: 147px;
+    }
+}
+// 237
+// @media screen and (max-width: 600px) {
+//     .padding-responsive {
+//         padding-top: 200px;
+//     }
+
+// }
+
+@media screen and (max-width: 360px) {
+    .padding-responsive {
+        padding-top: 146px;
+    }
+    // 176
+}

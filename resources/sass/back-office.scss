@@ -1,0 +1,451 @@
+// common
+body{
+  background-color: $darkBlue;
+  color: rgb(255, 255, 255);
+ 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+ //mobile nav
+.mobile_nav{
+  i{
+    color: white;
+  }
+}
+
+.navbar-light .navbar-toggler{
+  border: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+  color: white;
+}
+//errors
+small{
+  font-size: .7rem;
+}
+.error{
+  color: $mainColor;
+}
+
+.bg_red_secondColor{
+  background-color: $darkBlue;
+}
+
+.navbar.navbar-expand-md.navbar-light{
+  padding: 0;
+  .wrapper {
+    width: 100%;
+    margin: 0 $gt;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link{
+text-transform: uppercase;
+color: white;
+font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+//register
+
+.card-header{
+  color: $mainColor;;
+  font-size: 1.25rem;
+   i{
+     margin-right: .625rem;
+     color: white;
+   }
+}
+
+
+.card{
+  color: rgb(190, 190, 190);
+  background: #211f3f;
+  -webkit-box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.68); 
+  box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.68);
+  border-radius: $br;
+}
+
+.form-group{
+  font-size: 1.125rem;
+}
+
+
+
+.form-control, #email.form-control{
+  background-color:  $darkBlue;
+  color:white;
+  border: 0;
+}
+
+.form-control:focus, #email.form-control:focus, input:focus, textarea:focus{
+  color:white;
+  box-shadow:none;
+  border:1px solid rgb(78, 78, 80);
+  background-color: #222246;
+}
+
+
+//view
+.btn.btn-darkBlue{
+  display: flex;
+  align-items: center;
+  background-color: $darkBlue;
+  color: white;
+  font-size: 1.0625rem;
+    i {
+      padding: .3125rem .625rem;
+    }
+}
+
+.btn.btn-darkBlue:hover{
+  color: white;
+  background-color: rgba(52, 52, 88, 0.911);
+ 
+}
+
+
+.btn-yellow{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  margin: .3125rem;
+  background-color:$mainColor;
+  color: $darkBlue;
+  border-radius: $br;
+  font-size: 1.125rem;
+  padding:.6rem 1rem;
+    i {
+      padding-left: .625rem;
+    }
+}
+
+.btn-trasparent{
+  font-size: 1.125rem;
+  margin: .3125rem;
+  padding:.6rem 1rem;
+  background-color: transparent;
+  border: 2px solid rgba(52, 52, 88, 0.911);
+  color: white;
+  border-radius: $br;
+  transition: background-color .2s;
+  i {
+    padding-left: .625rem;
+  }
+  &:hover{
+    background-color:rgb(52, 52, 88) ;
+    color: white;
+  }
+}
+
+.btn.btn-lightBlue:hover{
+
+  display: flex;
+  align-items: center;
+  background-color:$mainColor;
+  color: white;
+  font-size: 1.0625rem;
+    i {
+      padding: .3125rem .625rem;
+    }
+}
+
+a.btn-link:hover{
+  text-decoration: none;
+}
+
+
+.dashbord-p{
+  font-size: .8rem;
+  color: rgb(195, 195, 195);
+}
+
+//Food cards
+
+.dashbord-food-card{
+  background: #211f3f;
+  color: white;
+  p,i{
+    font-size: 1rem;
+  }
+}
+
+.box-img{
+width: 80px;
+height: 80px;
+border-radius: $br_sm;
+overflow: hidden;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.col-img{
+  width: 80px;
+}
+
+.column-title{
+  color: rgb(190, 190, 190);
+
+}
+
+//Login
+
+.btn.btn-link{
+  color: rgb(255, 255, 255);
+  margin-top: 1.25rem;
+  padding: 0;
+}
+
+#email{
+  background-color: white;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  .navbar-brand {
+    height: 70px;
+    display: block;
+    transform: translateY(6%);
+    img {
+      height: 100%;
+    }
+  }
+  .nav-item.dropdown {
+    font-size: 1.125rem;
+  }
+  .row.details {
+    align-items: center;
+   -webkit-box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.3 ); 
+  box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.3);
+    border-radius: .625rem;
+    h4 {
+      padding-top: .3125rem;
+    }
+   
+    .description {
+      height: 50%;
+      overflow: auto;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fa-trash-alt, .fa-edit {
+  color: #48488ae1;
+}
+.opacity_50 {
+  opacity: 0.5;
+}
+.btn.btn-edit{
+  i{
+    font-size: 1.125rem;
+  }
+}
+
+.btn.btn-delete{
+  i{
+    font-size: 1.125rem;
+  }
+}
+
+.btn.btn-edit:hover i, .btn.btn-delete:hover i{
+  color: $darkBlue;
+}
+
+.foods_dashboard{
+  background-color: #242247;
+  border-radius: $br;
+}
+
+.name-risto{
+  color: $mainColor;
+}
+
+.navbar-light .navbar-nav .show > .nav-link{
+  color: white;
+}
+
+//Modal
+.modal-content{
+  color: white;
+  background-color:#211f3fe5;
+  -webkit-box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.3 ); 
+  box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header{
+  border-bottom: 0;
+}
+
+.modal-footer{
+  border-top:1px solid rgba(202, 202, 202, 0.465);
+}
+
+.modal-body{
+  color: $mainColor;
+}
+.btn_modal{
+  font-size: .8rem;
+}
+
+
+.close{
+  color: rgb(199, 199, 199);
+}
+
+.close:hover{
+  color: rgb(255, 255, 255);
+}
+
+.buttons_mobile{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-delete, .btn-edit, .show_food{
+  svg{
+    width: 30px;
+    fill: rgb(202, 202, 202);
+  }
+}
+
+.show_food{
+  svg{
+    width: 25px;
+    padding: 10px 0;
+  }
+}
+
+.btn-delete:hover, .btn-edit:hover, .show_food:hover{
+  svg{
+    fill: $mainColor;
+  }
+}
+
+
+//SHOW
+
+.show-img{
+  max-width: 100%;
+  height:100%;
+  border-radius: $br;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.btn-yellow{
+  a, i{
+    color: $darkBlue;
+  }
+  a{
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+h1.show_description{
+  color: white;
+}
+.show_description{
+  p{
+    font-size: 1.125rem;
+    color: white;
+      span{
+        color: rgb(146, 146, 146);
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+  }
+}
+//Mediaquery
+
+@media screen and (max-width: 767px) {
+  .display_mobile{
+    display: none;
+  }
+   .test{
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .display_mobile_mv_580{
+    display: none;
+  }
+
+  .btn-yellow, .btn-trasparent{
+    padding: .4375rem .875rem;
+    font-size: 1rem;
+  }
+
+  .navbar-brand{
+    img{
+      width: 250px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 473px) {
+  .display_mobile_mv_473{
+    display: none;
+  }
+
+  .buttons_mobile{
+    flex-direction: row;
+  }
+  .show_description{
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  .btn-yellow, .btn-trasparent{
+    padding: .3125rem .625rem;
+    font-size: .8rem;
+    i{
+      display: none;
+    }
+  }
+
+  .navbar-brand{
+    img{
+      width: 150px;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 375px) {
+  .btn-yellow.show{
+    padding: .3125rem;
+  }
+
+  .navbar-brand{
+    img{
+      display: none;
+    }
+  }
+ 
+}

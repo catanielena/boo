@@ -1,0 +1,99 @@
+// containers
+@mixin container-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+@mixin container-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+@mixin container-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+// buttons style
+@mixin btn($btnColor, $btnBG) {
+    border: 1px solid $btnColor;
+    color: $btnColor;
+    background: $btnBG;
+    border-radius: 8px;
+    @include align-center;
+}
+
+// flex properties
+// spaced X
+@mixin justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+// spaced Y
+@mixin justify-between-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+//centered Y column
+@mixin justify-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+//centered Y
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+//centered XY
+@mixin align-justify-center{
+    @include align-center;
+    justify-content: center;
+}
+//centered Y + spaced X
+@mixin align-center-between {
+    @include align-center;
+    justify-content: space-between;
+}
+
+// lists
+@mixin list-style-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin inline-block-list {
+    @include list-style-none;
+    display: inline-block;
+    li {
+        display: inline-block;
+    }
+}
+
+// positions
+@mixin center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//spaces
+@mixin padding-top-bottom-20px {
+    padding: 20px 0;
+}
+
+// box
+@mixin box--border {
+    padding: $gt_sm;
+    border: .0625rem solid $greyBorder;
+    border-radius: $br;
+}
+
+// box-shadow
+@mixin box--box-shadow {
+    -webkit-box-shadow: 2px 2px 8px 0px $greyBorder;
+    -moz-box-shadow: 2px 2px 8px 0px $greyBorder;
+    box-shadow: 2px 2px 8px 0px $greyBorder;
+    border-radius: $br;
+    padding: $gt;
+}
